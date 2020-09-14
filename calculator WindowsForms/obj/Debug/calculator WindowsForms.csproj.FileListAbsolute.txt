@@ -1,0 +1,10 @@
+D:\C#\dotnet_homework\week 1\calculator WindowsForms\bin\Debug\calculator WindowsForms.exe.config
+D:\C#\dotnet_homework\week 1\calculator WindowsForms\bin\Debug\calculator WindowsForms.exe
+D:\C#\dotnet_homework\week 1\calculator WindowsForms\bin\Debug\calculator WindowsForms.pdb
+D:\C#\dotnet_homework\week 1\calculator WindowsForms\obj\Debug\calculator WindowsForms.csprojAssemblyReference.cache
+D:\C#\dotnet_homework\week 1\calculator WindowsForms\obj\Debug\calculator_WindowsForms.Form1.resources
+D:\C#\dotnet_homework\week 1\calculator WindowsForms\obj\Debug\calculator_WindowsForms.Properties.Resources.resources
+D:\C#\dotnet_homework\week 1\calculator WindowsForms\obj\Debug\calculator WindowsForms.csproj.GenerateResource.cache
+D:\C#\dotnet_homework\week 1\calculator WindowsForms\obj\Debug\calculator WindowsForms.csproj.CoreCompileInputs.cache
+D:\C#\dotnet_homework\week 1\calculator WindowsForms\obj\Debug\calculator WindowsForms.exe
+D:\C#\dotnet_homework\week 1\calculator WindowsForms\obj\Debug\calculator WindowsForms.pdb

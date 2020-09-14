@@ -1,0 +1,7 @@
+D:\C#\dotnet_homework\calculator console\calculator console\bin\Debug\calculator console.exe.config
+D:\C#\dotnet_homework\calculator console\calculator console\bin\Debug\calculator console.exe
+D:\C#\dotnet_homework\calculator console\calculator console\bin\Debug\calculator console.pdb
+D:\C#\dotnet_homework\calculator console\calculator console\obj\Debug\calculator console.csprojAssemblyReference.cache
+D:\C#\dotnet_homework\calculator console\calculator console\obj\Debug\calculator console.csproj.CoreCompileInputs.cache
+D:\C#\dotnet_homework\calculator console\calculator console\obj\Debug\calculator console.exe
+D:\C#\dotnet_homework\calculator console\calculator console\obj\Debug\calculator console.pdb
