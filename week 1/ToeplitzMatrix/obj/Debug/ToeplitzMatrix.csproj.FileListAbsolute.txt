@@ -1,0 +1,7 @@
+D:\C#\dotnet_homework\github_homework\week 1\ToeplitzMatrix\bin\Debug\ToeplitzMatrix.exe.config
+D:\C#\dotnet_homework\github_homework\week 1\ToeplitzMatrix\bin\Debug\ToeplitzMatrix.exe
+D:\C#\dotnet_homework\github_homework\week 1\ToeplitzMatrix\bin\Debug\ToeplitzMatrix.pdb
+D:\C#\dotnet_homework\github_homework\week 1\ToeplitzMatrix\obj\Debug\ToeplitzMatrix.csprojAssemblyReference.cache
+D:\C#\dotnet_homework\github_homework\week 1\ToeplitzMatrix\obj\Debug\ToeplitzMatrix.csproj.CoreCompileInputs.cache
+D:\C#\dotnet_homework\github_homework\week 1\ToeplitzMatrix\obj\Debug\ToeplitzMatrix.exe
+D:\C#\dotnet_homework\github_homework\week 1\ToeplitzMatrix\obj\Debug\ToeplitzMatrix.pdb

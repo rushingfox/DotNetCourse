@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayStatistics", "ArraySta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SieveOfEratosthenes", "SieveOfEratosthenes\SieveOfEratosthenes.csproj", "{2A3F046F-3F12-4BE4-8110-942F766723A5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToeplitzMatrix", "ToeplitzMatrix\ToeplitzMatrix.csproj", "{5904CA1C-5F3F-4BD2-A2FD-BA05D3ECB77D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{2A3F046F-3F12-4BE4-8110-942F766723A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A3F046F-3F12-4BE4-8110-942F766723A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A3F046F-3F12-4BE4-8110-942F766723A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5904CA1C-5F3F-4BD2-A2FD-BA05D3ECB77D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5904CA1C-5F3F-4BD2-A2FD-BA05D3ECB77D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5904CA1C-5F3F-4BD2-A2FD-BA05D3ECB77D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5904CA1C-5F3F-4BD2-A2FD-BA05D3ECB77D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
