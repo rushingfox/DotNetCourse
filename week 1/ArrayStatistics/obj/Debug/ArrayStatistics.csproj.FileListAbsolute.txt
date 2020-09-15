@@ -1,0 +1,7 @@
+D:\C#\dotnet_homework\github_homework\week 1\ArrayStatistics\bin\Debug\ArrayStatistics.exe.config
+D:\C#\dotnet_homework\github_homework\week 1\ArrayStatistics\bin\Debug\ArrayStatistics.exe
+D:\C#\dotnet_homework\github_homework\week 1\ArrayStatistics\bin\Debug\ArrayStatistics.pdb
+D:\C#\dotnet_homework\github_homework\week 1\ArrayStatistics\obj\Debug\ArrayStatistics.csprojAssemblyReference.cache
+D:\C#\dotnet_homework\github_homework\week 1\ArrayStatistics\obj\Debug\ArrayStatistics.csproj.CoreCompileInputs.cache
+D:\C#\dotnet_homework\github_homework\week 1\ArrayStatistics\obj\Debug\ArrayStatistics.exe
+D:\C#\dotnet_homework\github_homework\week 1\ArrayStatistics\obj\Debug\ArrayStatistics.pdb

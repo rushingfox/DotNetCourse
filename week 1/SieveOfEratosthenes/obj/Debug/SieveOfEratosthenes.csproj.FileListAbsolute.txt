@@ -1,0 +1,7 @@
+D:\C#\dotnet_homework\github_homework\week 1\SieveOfEratosthenes\bin\Debug\SieveOfEratosthenes.exe.config
+D:\C#\dotnet_homework\github_homework\week 1\SieveOfEratosthenes\bin\Debug\SieveOfEratosthenes.exe
+D:\C#\dotnet_homework\github_homework\week 1\SieveOfEratosthenes\bin\Debug\SieveOfEratosthenes.pdb
+D:\C#\dotnet_homework\github_homework\week 1\SieveOfEratosthenes\obj\Debug\SieveOfEratosthenes.csprojAssemblyReference.cache
+D:\C#\dotnet_homework\github_homework\week 1\SieveOfEratosthenes\obj\Debug\SieveOfEratosthenes.csproj.CoreCompileInputs.cache
+D:\C#\dotnet_homework\github_homework\week 1\SieveOfEratosthenes\obj\Debug\SieveOfEratosthenes.exe
+D:\C#\dotnet_homework\github_homework\week 1\SieveOfEratosthenes\obj\Debug\SieveOfEratosthenes.pdb

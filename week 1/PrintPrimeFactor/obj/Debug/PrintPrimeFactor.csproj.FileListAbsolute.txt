@@ -1,0 +1,7 @@
+D:\C#\dotnet_homework\github_homework\week 1\PrintPrimeFactor\bin\Debug\PrintPrimeFactor.exe.config
+D:\C#\dotnet_homework\github_homework\week 1\PrintPrimeFactor\bin\Debug\PrintPrimeFactor.exe
+D:\C#\dotnet_homework\github_homework\week 1\PrintPrimeFactor\bin\Debug\PrintPrimeFactor.pdb
+D:\C#\dotnet_homework\github_homework\week 1\PrintPrimeFactor\obj\Debug\PrintPrimeFactor.csprojAssemblyReference.cache
+D:\C#\dotnet_homework\github_homework\week 1\PrintPrimeFactor\obj\Debug\PrintPrimeFactor.csproj.CoreCompileInputs.cache
+D:\C#\dotnet_homework\github_homework\week 1\PrintPrimeFactor\obj\Debug\PrintPrimeFactor.exe
+D:\C#\dotnet_homework\github_homework\week 1\PrintPrimeFactor\obj\Debug\PrintPrimeFactor.pdb
