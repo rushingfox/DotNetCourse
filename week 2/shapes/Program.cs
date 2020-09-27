@@ -19,7 +19,7 @@ namespace shapes
         bool legal();
         double area_calculating();
     }
-    class Rectangle : shape
+    public class Rectangle : shape
     {
         public double length
         {
@@ -35,7 +35,13 @@ namespace shapes
         {
             this.length = length;
             this.width = width;
+            Console.WriteLine($"a new rectangle is produced with length{length},width{width}");
         }
+
+        public Rectangle()
+        {
+        }
+
         public string shapename
         {
             get { return "rectangle"; }
@@ -58,7 +64,7 @@ namespace shapes
             }
         }
     }
-    class Square : shape
+    public class Square : shape
     {
         public double side_length
         {
@@ -68,6 +74,7 @@ namespace shapes
         public Square(double side_length)
         {
             this.side_length = side_length;
+            Console.WriteLine($"a new square is produced with side_length{side_length}");
         }
         public string shapename
         {
@@ -94,7 +101,7 @@ namespace shapes
             }
         }
     }
-    class Triangle : shape
+    public class Triangle : shape
     {
         public double[] sides  //property can be array, but it need to be initialized in main function or constructor function
         {
@@ -107,6 +114,7 @@ namespace shapes
             sides[0] = side0;
             sides[1] = side1;
             sides[2] = side2;
+            Console.WriteLine($"a new triangle is produced with side1{side0},side2{side1},side3{side2}");
         }
         public string shapename
         {
