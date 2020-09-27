@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyGenericList", "MyGenericL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapeFactory", "ShapeFactory\ShapeFactory.csproj", "{DAB54031-F9AA-4BBE-9085-145A3F0B8756}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventClock", "EventClock\EventClock.csproj", "{4C7F709F-E689-4498-B167-792FC938D1BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{DAB54031-F9AA-4BBE-9085-145A3F0B8756}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DAB54031-F9AA-4BBE-9085-145A3F0B8756}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DAB54031-F9AA-4BBE-9085-145A3F0B8756}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C7F709F-E689-4498-B167-792FC938D1BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C7F709F-E689-4498-B167-792FC938D1BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C7F709F-E689-4498-B167-792FC938D1BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C7F709F-E689-4498-B167-792FC938D1BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
