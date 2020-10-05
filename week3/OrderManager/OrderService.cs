@@ -8,7 +8,7 @@ using System.IO;
 
 namespace OrderManager
 {
-    class OrderService
+    public class OrderService
     {
         public List<Order> orders;
         public OrderService()
