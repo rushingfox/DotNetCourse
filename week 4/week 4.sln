@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.705
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CayleyTree", "CayleyTree\CayleyTree.csproj", "{4E066C3B-A467-46D1-9A6E-0EF515CFA58F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderManager", "OrderManager\OrderManager.csproj", "{4AFCF512-3775-4957-8595-990572D1397E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order_WinForm", "Order_WinForm\Order_WinForm.csproj", "{206A0922-D279-4691-B69F-AA43674D252E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{4E066C3B-A467-46D1-9A6E-0EF515CFA58F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E066C3B-A467-46D1-9A6E-0EF515CFA58F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E066C3B-A467-46D1-9A6E-0EF515CFA58F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AFCF512-3775-4957-8595-990572D1397E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AFCF512-3775-4957-8595-990572D1397E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AFCF512-3775-4957-8595-990572D1397E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AFCF512-3775-4957-8595-990572D1397E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{206A0922-D279-4691-B69F-AA43674D252E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{206A0922-D279-4691-B69F-AA43674D252E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{206A0922-D279-4691-B69F-AA43674D252E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{206A0922-D279-4691-B69F-AA43674D252E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
