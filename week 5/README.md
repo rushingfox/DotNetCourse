@@ -8,3 +8,7 @@
 2、尝试使用Winform来设置初始URL，启动爬虫，显示已经爬取的URL和错误的URL信息。
 
 3、将爬虫程序，使用并行处理进行优化，实现更快速的网页爬取。
+
+Notes:  
+question 1 and 3 are configured by the project "improved crawler"  
+question 2 is configured by the project "winformCrawler"  
