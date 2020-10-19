@@ -1,4 +1,9 @@
 ﻿/*
+ test starturl:
+ https://www.cnblogs.com/itwild/
+ https://www.cnblogs.com/sheng-jie/
+ */
+/*
  1、改进书上例子9-10的爬虫程序。
 （1）只爬取起始网站（www.cnblog.com）上的网页 
 （2）只有当爬取的是html，htm，jsp，aspx、php页面时，才解析并爬取下一级URL。
@@ -18,10 +23,13 @@ using System.Threading.Tasks;
 
 namespace SimpleCrawler
 {
-    class SimpleCrawler
+    public class SimpleCrawler
     {
-        private Hashtable urls = new Hashtable();
-        private int count = 0;
+        public Hashtable urls = new Hashtable();
+        public int count = 0;
+        public int maxcount = 100;//the scale for each crawler
+        static public string startUrl = "http://www.cnblogs.com/dstang2000";
+        public bool finished = false;
         static void Main(string[] args)
         {
             /*
@@ -31,33 +39,35 @@ namespace SimpleCrawler
              */
             //actually the above lines are testing the class:Uri, which extremely surprised me. With it, I do not need to care about the problems of "/" in the composition of base uri and relative uri.
             SimpleCrawler myCrawler = new SimpleCrawler();
-            string startUrl = "http://www.cnblogs.com/dstang2000/";
+
             if (args.Length >= 1) startUrl = args[0];
             myCrawler.urls.Add(startUrl, false);//加入初始页面
             new Thread(myCrawler.Crawl).Start();
             Console.ReadKey();
         }
 
-        private void Crawl()
+        public void Crawl()
         {
             Console.WriteLine("开始爬行了.... ");
             while (true)
             {
                 string current = null;
-                foreach (string url in urls.Keys)
+                foreach (string url in urls.Keys)//find the last false one in the hashtable
                 {
                     if ((bool)urls[url]) continue;
                     current = url;
-                }
 
-                if (current == null || count > 10) break;
+                }
+                if (current == null || count > maxcount) break;
                 Console.WriteLine("爬行" + current + "页面!");
                 string html = DownLoad(current); // 下载
                 urls[current] = true;
                 count++;
-                Parse(html,current);//解析,并加入新的链接
+                Parse(html, current);//解析,并加入新的链接
                 Console.WriteLine("爬行结束");
             }
+            finished = true;
+            count = 0;//ensure the second and later execution in the winForm
         }
 
         public string DownLoad(string url)
@@ -66,8 +76,13 @@ namespace SimpleCrawler
             {
                 WebClient webClient = new WebClient();
                 webClient.Encoding = Encoding.UTF8;
-                string html = webClient.DownloadString(url);
-                string fileName = count.ToString();
+                string html = webClient.DownloadString(url);                
+                string partialName = url.Substring(url.IndexOf("www.cnblogs.com/")+16);
+                if (partialName.Contains("/"))
+                {
+                    partialName=partialName.Remove(partialName.IndexOf("/"));
+                }
+                string fileName = partialName+"_"+count.ToString();
                 File.WriteAllText(fileName, html, Encoding.UTF8);
                 return html;
             }
