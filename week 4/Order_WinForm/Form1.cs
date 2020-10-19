@@ -43,21 +43,24 @@ namespace Order_WinForm
         private void button2_Click(object sender, EventArgs e)
         {
             Form_pop form_Pop = new Form_pop();
-            form_Pop.ShowDialog();
+            form_Pop.Show();
+            //https://www.cnblogs.com/tommy-huang/p/4539999.html 
+            //at the beginning, I use showdialogue but failed to execute the next sentence; actually the next sentence will not run untill the window was closed
+            //button3_click is the same
             form_Pop.radioButton1.Checked = true;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             Form_pop form_Pop = new Form_pop();
-            form_Pop.ShowDialog();
+            form_Pop.Show();
             form_Pop.radioButton2.Checked = true;
         }
 
         private void button7_Click(object sender, EventArgs e)// I don' t know why it doesn' t work after adding the order, conversely it works after search orders.
         {
             bindingSource1.DataSource = orderService.orders;
-            dataGridView1.Refresh();
+            bindingSource1.ResetBindings(false);            
         }
     }
 }

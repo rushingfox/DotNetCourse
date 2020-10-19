@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*
+ 2、尝试使用Winform来设置初始URL，启动爬虫，显示已经爬取的URL和错误的URL信息。
+ */
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,6 +26,7 @@ namespace WindowsFormsCrawler
         public Form1()
         {
             InitializeComponent();
+            bindingSource1.DataSource = WinFormCrawler.urls;
         }
         private void dataGridView1_RowStateChanged(object sender, DataGridViewRowStateChangedEventArgs e)//auto number
         {
@@ -38,6 +43,7 @@ namespace WindowsFormsCrawler
         {
             WinFormCrawler.finished = false;
             WinFormCrawler.urls = new Hashtable();//because there is the potential for clicking this button more than 1 time
+            WinFormCrawler.count = 0;//ensure the second and later execution in the winForm
             WinFormCrawler.urls.Add(SimpleCrawler.SimpleCrawler.startUrl, false);//加入初始页面
             new Thread(WinFormCrawler.Crawl).Start();
             MessageBox.Show("start!");
@@ -47,6 +53,7 @@ namespace WindowsFormsCrawler
                 if (WinFormCrawler.finished)
                 {
                     bindingSource1.DataSource = WinFormCrawler.urls;
+                    //bindingSource1.ResetBindings(false);
                     break;
                 }
             }

@@ -67,7 +67,6 @@ namespace SimpleCrawler
                 Console.WriteLine("爬行结束");
             }
             finished = true;
-            count = 0;//ensure the second and later execution in the winForm
         }
 
         public string DownLoad(string url)
