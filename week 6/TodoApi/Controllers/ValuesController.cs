@@ -11,7 +11,7 @@ namespace TodoApi.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        private readonly dbcontext db;
+        public dbcontext db;
         public ValuesController(dbcontext dbcontext1)
         {
             this.db = dbcontext1;
@@ -20,24 +20,24 @@ namespace TodoApi.Controllers
         //search order and return
         // GET api/values
         [HttpGet]
-        public ActionResult<List<Order>> Get(int n,string pname,string cname,int p)
+        public ActionResult<List<Order>> Get(string n,string pname,string cname,string pr)
         {
-            IQueryable<Order> query = db.dbOrders;
+            IQueryable<Order> query = db.orders;
             if (n!=null)
             {
-                query = query.Where(p => p.OrderNumber == n);
+                query = query.Where(p => p.OrderNumber == Convert.ToInt32(n));
             }
             if (pname != null)
             {
                 query = query.Where(p => p.ProductName == pname);
             }
-            if (n != null)
+            if (cname != null)
             {
                 query = query.Where(p => p.ClientName == cname);
             }
-            if (n != null)
+            if (pr != null)
             {
-                query = query.Where(p => p.price == p);
+                query = query.Where(p => p.price == Convert.ToInt32(pr));
             }
             return query.ToList();
         }
@@ -52,9 +52,9 @@ namespace TodoApi.Controllers
         //add order
         // POST api/values
         [HttpPost]
-        public List<Order> Post(Order order)
+        public void Post(Order order)
         {
-            db.dbOrders.Add(order);
+            db.orders.Add(order);
             db.SaveChanges();
         }
 
@@ -63,7 +63,7 @@ namespace TodoApi.Controllers
         [HttpPut("{id}")]
         public void Put(int id, Order neworder)
         {
-            var order = db.dbOrders.FirstOrDefault(p => p.OrderNumber == id);
+            var order = db.orders.FirstOrDefault(p => p.OrderNumber == id);
             if (order != null)
             {
                 order = neworder;
@@ -76,10 +76,10 @@ namespace TodoApi.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-            var order = db.dbOrders.FirstOrDefault(p => p.OrderNumber == id);
+            var order = db.orders.FirstOrDefault(p => p.OrderNumber == id);
             if (order != null)
             {
-                db.dbOrders.Remove(order);
+                db.orders.Remove(order);
                 db.SaveChanges();
             }
         }

@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.Entity;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
+using Microsoft.EntityFrameworkCore;
 
 namespace TodoApi.model
 {
     public class dbcontext:DbContext
     {
-        public dbcontext():base("orderdatabase")
+        public dbcontext(DbContextOptions<dbcontext> options):base(options)
         {
-            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<dbcontext>());
+            this.Database.EnsureCreated();
         }
-        public DbSet<Order> dbOrders { get; set; }
+        public DbSet<Order> orders { get; set; }
     }
 }
